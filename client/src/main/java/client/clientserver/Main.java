@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 import java.net.UnknownHostException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) throws UnknownHostException, IOException {
@@ -15,7 +16,9 @@ public class Main {
         BufferedReader in = new BufferedReader(new InputStreamReader(s0.getInputStream()));
         DataOutputStream out = new DataOutputStream(s0.getOutputStream());
 
-        String s = "Ciao come va?";
+        Scanner input = new Scanner(System.in);
+        System.out.println("Inserire la stringa da inviare\n");
+        String s = input.nextLine();
 
         out.writeBytes(s + "\n");
 
