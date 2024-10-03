@@ -6,9 +6,9 @@ import java.net.Socket;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        System.out.println("Hello world");
-        ServerSocket sS0 = new ServerSocket(3001);
+        System.out.println("Server in ascolto");
+        ServerSocket sS0 = new ServerSocket(3000);
         Socket s0 = sS0.accept();
-        System.out.println("Ciao a tutti");    
+        System.out.println("Server terminato");    
     }
 }
