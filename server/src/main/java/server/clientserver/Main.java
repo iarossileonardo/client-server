@@ -12,7 +12,7 @@ public class Main {
         System.out.println("Server in ascolto");
         ServerSocket sS0 = new ServerSocket(3000);
         Socket s0 = sS0.accept();
-        System.out.println("Un client si è collegato alla porta " + s0);
+        System.out.println("Un client si è collegato alla porta " + s0.getPort());
 
         BufferedReader in = new BufferedReader(new InputStreamReader(s0.getInputStream()));
         DataOutputStream out = new DataOutputStream(s0.getOutputStream());

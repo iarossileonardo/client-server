@@ -24,9 +24,11 @@ public class Main {
 
         String sM = in.readLine();
 
+        System.out.println("Invio dati a server");
+
         System.out.println("Stringa maiuscola: " + sM);
         
-         
+        s0.close();
         System.out.println("client terminato");
     }
 }
